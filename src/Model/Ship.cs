@@ -85,11 +85,6 @@ public class Ship
         }
     }
 
-
-    /// <summary>
-    ///     ''' The column location of the ship
-    ///  <returns> the column of the ship</returns>
-    /// </summary>
     public int Column
     {
         get
@@ -98,9 +93,6 @@ public class Ship
         }
     }
 
-    /// <summary>
-    ///     <return>The ship's direction </return>
-    /// </summary>
     public Direction Direction
     {
         get
@@ -109,18 +101,13 @@ public class Ship
         }
     }
 
-    /// <summary>
-    /// ''' Initialize the ship name and the size of the ship
-    /// ''' Placing the ship at the selected tiles
-    /// </summary>
-    /// <param name="ship"></param>
     public Ship(ShipName ship)
     {
         _shipName = ship;
         _tiles = new List<Tile>();
 
         // gets the ship size from the enumarator
-        _sizeOfShip = _shipName;
+        _sizeOfShip = (int)_shipName;
     }
 
     /// <summary>
@@ -142,10 +129,6 @@ public class Ship
         _tiles.Clear();
     }
 
-
-    /// <summary>
-    ///     ''' Register hit, if the player manage to hit a ship
-    /// </summary>
     public void Hit()
     {
         _hitsTaken = _hitsTaken + 1;
@@ -163,10 +146,6 @@ public class Ship
         }
     }
 
-
-    /// <summary>
-    ///     ''' Ship is destroyed if the hits are equal to its size
-    /// </summary>
     public bool IsDestroyed
     {
         get

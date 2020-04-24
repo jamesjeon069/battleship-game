@@ -12,6 +12,10 @@ using System.Threading.Tasks;
 using Microsoft.VisualBasic;
 using SwinGameSDK;
 
+using static GameController;
+using static GameResources;
+using static UtilityFunctions;
+
 /// <summary>
 
 /// ''' The menu controller handles the drawing and user interactions
@@ -33,31 +37,31 @@ static class MenuController
     ///     ''' </remarks>
     private readonly static string[][] _menuStructure = new[] { new string[] { "PLAY", "SETUP", "SCORES", "QUIT" }, new string[] { "RETURN", "SURRENDER", "QUIT" }, new string[] { "EASY", "MEDIUM", "HARD" } };
 
-    private const static int MENU_TOP = 575;
-    private const static int MENU_LEFT = 30;
-    private const static int MENU_GAP = 0;
-    private const static int BUTTON_WIDTH = 75;
-    private const static int BUTTON_HEIGHT = 15;
-    private const static int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
-    private const static int TEXT_OFFSET = 0;
+    private const int MENU_TOP = 575;
+    private const int MENU_LEFT = 30;
+    private const int MENU_GAP = 0;
+    private const int BUTTON_WIDTH = 75;
+    private const int BUTTON_HEIGHT = 15;
+    private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
+    private const int TEXT_OFFSET = 0;
 
-    private const static int MAIN_MENU = 0;
-    private const static int GAME_MENU = 1;
-    private const static int SETUP_MENU = 2;
+    private const int MAIN_MENU = 0;
+    private const int GAME_MENU = 1;
+    private const int SETUP_MENU = 2;
 
-    private const static int MAIN_MENU_PLAY_BUTTON = 0;
-    private const static int MAIN_MENU_SETUP_BUTTON = 1;
-    private const static int MAIN_MENU_TOP_SCORES_BUTTON = 2;
-    private const static int MAIN_MENU_QUIT_BUTTON = 3;
+    private const int MAIN_MENU_PLAY_BUTTON = 0;
+    private const int MAIN_MENU_SETUP_BUTTON = 1;
+    private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
+    private const int MAIN_MENU_QUIT_BUTTON = 3;
 
-    private const static int SETUP_MENU_EASY_BUTTON = 0;
-    private const static int SETUP_MENU_MEDIUM_BUTTON = 1;
-    private const static int SETUP_MENU_HARD_BUTTON = 2;
-    private const static int SETUP_MENU_EXIT_BUTTON = 3;
+    private const int SETUP_MENU_EASY_BUTTON = 0;
+    private const int SETUP_MENU_MEDIUM_BUTTON = 1;
+    private const int SETUP_MENU_HARD_BUTTON = 2;
+    private const int SETUP_MENU_EXIT_BUTTON = 3;
 
-    private const static int GAME_MENU_RETURN_BUTTON = 0;
-    private const static int GAME_MENU_SURRENDER_BUTTON = 1;
-    private const static int GAME_MENU_QUIT_BUTTON = 2;
+    private const int GAME_MENU_RETURN_BUTTON = 0;
+    private const int GAME_MENU_SURRENDER_BUTTON = 1;
+    private const int GAME_MENU_QUIT_BUTTON = 2;
 
     private readonly static Color MENU_COLOR = SwinGame.RGBAColor(2, 167, 252, 255);
     private readonly static Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
@@ -102,7 +106,7 @@ static class MenuController
     ///     ''' <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
     private static bool HandleMenuInput(int menu, int level, int xOffset)
     {
-        if (SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
+        if (SwinGame.KeyTyped(KeyCode.EscapeKey))
         {
             EndCurrentState();
             return true;
@@ -189,7 +193,7 @@ static class MenuController
     private static void DrawButtons(int menu, int level, int xOffset)
     {
         int btnTop;
-        Rectangle toDraw;
+        Rectangle toDraw = new Rectangle();
 
         btnTop = MENU_TOP - (MENU_GAP + BUTTON_HEIGHT) * level;
         int i;
@@ -203,7 +207,7 @@ static class MenuController
             toDraw.Y = btnTop + TEXT_OFFSET;
             toDraw.Width = BUTTON_WIDTH;
             toDraw.Height = BUTTON_HEIGHT;
-            SwinGame.DrawTextLines(_menuStructure[menu](i), MENU_COLOR, Color.Black, GameFont("Menu"), FontAlignment.AlignCenter, toDraw);
+            SwinGame.DrawText(_menuStructure[menu][i], MENU_COLOR, Color.Black, GameFont("Menu"), FontAlignment.AlignCenter, toDraw);
 
             if (SwinGame.MouseDown(MouseButton.LeftButton) & IsMouseOverMenu(i, level, xOffset))
                 SwinGame.DrawRectangle(HIGHLIGHT_COLOR, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);

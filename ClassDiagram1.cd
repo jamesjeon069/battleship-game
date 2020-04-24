@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DeploymentController">
+    <Position X="8" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACCEAAAAAgwAAAAAACgEAIAIABAICBAggAEAAAgQ=</HashCode>
+      <FileName>src\DeploymentController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DiscoveryController">
+    <Position X="1" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>src\DiscoveryController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EndingGameController">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>src\EndingGameController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameController">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAIACJAEAAAQAEAYABBCCCgAIEgAAAABAACAAAQAEQ=</HashCode>
+      <FileName>src\GameController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameLogic">
+    <Position X="6.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>src\GameLogic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameResources">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ICEIgAqAAEAAAAAQAgCAAQhAlAAAkAIYQAAMABQAgCo=</HashCode>
+      <FileName>src\GameResources.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighScoreController">
+    <Position X="4.5" Y="8.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="HighScoreController.Score" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\HighScoreController.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AEAAAAABAAAAAAAQAAAAIAAAAAAAAAAAAABAFAAAAAA=</HashCode>
+      <FileName>src\HighScoreController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuController">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QgAAGAIEACKYkAAAABAgEgAGQAAAACAQI2AQBEAAsSk=</HashCode>
+      <FileName>src\MenuController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIHardPlayer">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="AIHardPlayer.Target" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Model\AIHardPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="AIHardPlayer.AIStates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Model\AIHardPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIABAAgQAIAAACAICAAAAAEACAAAAgECAAA=</HashCode>
+      <FileName>src\Model\AIHardPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIMediumPlayer">
+    <Position X="4.5" Y="3.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="AIMediumPlayer.AIStates" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Model\AIMediumPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgQAIAAAAAIAAAAAAEACAAAAgAAAAA=</HashCode>
+      <FileName>src\Model\AIMediumPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AIPlayer">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="AIPlayer.Location" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Model\AIPlayer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAIAAAAAAAIAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Model\AIPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AttackResult">
+    <Position X="9.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAABAhAEAABAAACAAACAAgAAAAAgCAAAAAA=</HashCode>
+      <FileName>src\Model\AttackResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BattleShipsGame">
+    <Position X="2.75" Y="8.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="BattleShipsGame.AttackCompletedHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>src\Model\BattleShipsGame.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAABAAAQAAIAAAAABAAAAAAAAAAAQAQAAA=</HashCode>
+      <FileName>src\Model\BattleShipsGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player">
+    <Position X="1" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAggAAAAEABBgQQAUAhAKAAIigAQAEAAAAEAAAgAQ=</HashCode>
+      <FileName>src\Model\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SeaGridAdapter" BaseTypeListCollapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAJAgAAAAABAAAAEAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Model\SeaGridAdapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Ship">
+    <Position X="6.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CACAAAEAAABCgAAwACJABAQQAAAAAgAAAAAIAAIAAAA=</HashCode>
+      <FileName>src\Model\Ship.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tile">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAABAAAAABAAACAgACJAgAQAAAAgAAAAAA=</HashCode>
+      <FileName>src\Model\Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UtilityFunctions">
+    <Position X="12.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gUBYgQACAApAAEFQIIBIAAAIBAAAQQCAXAAEIAiEAgg=</HashCode>
+      <FileName>src\UtilityFunctions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SeaGrid" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAABJAAQAAAABAAQAECUAABAAAAAgAACAAAAAAA=</HashCode>
+      <FileName>src\Model\SeaGrid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ISeaGrid">
+    <Position X="9.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAJAAAAAAABAAAAEAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Model\ISeaGrid.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="GameState">
+    <Position X="10" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAoCAAAAAAAAAAAEAAAAAAAAAwAAAACAgAAAAAA=</HashCode>
+      <FileName>src\GameState.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AIOption">
+    <Position X="12" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAkAAA=</HashCode>
+      <FileName>src\Model\AIOption.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="Direction">
+    <Position X="13.75" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>src\Model\Directions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ResultOfAttack">
+    <Position X="11.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAgAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAABAAAIA=</HashCode>
+      <FileName>src\Model\ResultOfAttack.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ShipName">
+    <Position X="13.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAAEAAIA=</HashCode>
+      <FileName>src\Model\ShipName.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="TileView">
+    <Position X="15.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAABAAAAAIAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\Model\TileView.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
