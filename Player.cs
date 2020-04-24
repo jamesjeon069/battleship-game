@@ -148,6 +148,11 @@ public class Player : IEnumerable<Ship>
         }
     }
 
+    /// <summary>
+    ///     ''' The number of hits the player has made
+    ///     <value>hits made</value>
+    ///     <return>the number of hits made</return>
+    /// </summary>
     public int Hits
     {
         get
@@ -169,6 +174,11 @@ public class Player : IEnumerable<Ship>
         }
     }
 
+    /// <summary>
+    ///     ''' The total number of scores
+    ///     <value>number of socres</value>
+    ///     <return>number of scores</return>
+    /// </summary>
     public int Score
     {
         get
@@ -250,6 +260,9 @@ public class Player : IEnumerable<Ship>
         return result;
     }
 
+    /// <summary>
+    ///     ''' Randomize the placement of the ships
+    /// </summary>
     public virtual void RandomizeDeployment()
     {
         bool placementSuccessful;
