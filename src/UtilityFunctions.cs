@@ -1,7 +1,3 @@
-﻿/// <summary>
-/// ''' This includes a number of utility methods for
-/// ''' drawing and interacting with the Mouse.
-/// ''' </summary>
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -19,6 +15,10 @@ using SwinGameSDK;
 using static GameResources;
 using static GameController;
 
+﻿/// <summary>
+/// ''' This includes a number of utility methods for
+/// ''' drawing and interacting with the Mouse.
+/// ''' </summary>
 static class UtilityFunctions
 {
     public const int FIELD_TOP = 122;
@@ -292,11 +292,21 @@ static class UtilityFunctions
         SwinGame.DrawFramerate(675, 585);
     }
 
+    /*
+    ''' <summary>
+    ''' Adds explosion animation at grid location
+    ''' </summary>
+    */
     public static void AddExplosion(int row, int col)
     {
         AddAnimation(row, col, "Splash");
     }
 
+    /*
+    ''' <summary>
+    ''' Adds splash animation at grid location
+    ''' </summary>
+    */
     public static void AddSplash(int row, int col)
     {
         AddAnimation(row, col, "Splash");
@@ -304,6 +314,11 @@ static class UtilityFunctions
 
     private static List<Sprite> _Animations = new List<Sprite>();
 
+    /*
+    ''' <summary>
+    ''' Adds animation with game sprites
+    ''' </summary>
+    */
     private static void AddAnimation(int row, int col, string image)
     {
         Sprite s;
@@ -323,6 +338,11 @@ static class UtilityFunctions
         _Animations.Add(s);
     }
 
+    /*
+    ''' <summary>
+    ''' Updates each frame of game sprites then release the sprite resources
+    ''' </summary>
+    */
     public static void UpdateAnimations()
     {
         List<Sprite> ended = new List<Sprite>();
@@ -340,12 +360,22 @@ static class UtilityFunctions
         }
     }
 
+    /*
+    ''' <summary>
+    ''' Displays each game sprite
+    ''' </summary>
+    */
     public static void DrawAnimations()
     {
         foreach (Sprite s in _Animations)
             SwinGame.DrawSprite(s);
     }
 
+    /*
+    ''' <summary>
+    ''' Create animation by displaying each frame of sprites
+    ''' </summary>
+    */
     public static void DrawAnimationSequence()
     {
         int i;
