@@ -156,6 +156,11 @@ public static class GameController
         SwinGame.RefreshScreen();
     }
 
+    /*
+    ''' <summary>
+    ''' Displays the animation and sound effect when a target is hit
+    ''' </summary>
+    */
     private static void PlayHitSequence(int row, int column, bool showAnimation)
     {
         if (showAnimation)
@@ -166,6 +171,11 @@ public static class GameController
         DrawAnimationSequence();
     }
 
+    /*
+    ''' <summary>
+    ''' Displays the animation and sound effect when a target is missed
+    ''' </summary>
+    */
     private static void PlayMissSequence(int row, int column, bool showAnimation)
     {
         if (showAnimation)
